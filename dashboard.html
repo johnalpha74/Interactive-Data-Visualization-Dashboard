@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Data Visualization Dashboard</h1>
+    </header>
+    <main>
+        <section id="chart-container">
+            <div class="chart-wrapper">
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="barChart"></canvas>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="pieChart"></canvas>
+            </div>
+        </section>
+        <section id="data-controls">
+            <button id="refreshData">Refresh Data</button>
+            <select id="dataSet">
+                <option value="set1">Dataset 1</option>
+                <option value="set2">Dataset 2</option>
+                <option value="set3">Dataset 3</option>
+            </select>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
