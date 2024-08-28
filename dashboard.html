@@ -6,6 +6,7 @@
     <title>Data Visualization Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 </head>
 <body>
     <header>
@@ -15,25 +16,23 @@
         <section id="chart-container">
             <div class="chart-wrapper">
                 <canvas id="lineChart"></canvas>
+                <div class="loading-indicator">Loading...</div>
             </div>
             <div class="chart-wrapper">
                 <canvas id="barChart"></canvas>
+                <div class="loading-indicator">Loading...</div>
             </div>
             <div class="chart-wrapper">
                 <canvas id="pieChart"></canvas>
+                <div class="loading-indicator">Loading...</div>
             </div>
         </section>
-        <section id="data-controls">
-            <button id="refreshData">Refresh Data</button>
-            <select id="dataSet">
-                <option value="set1">Dataset 1</option>
-                <option value="set2">Dataset 2</option>
-                <option value="set3">Dataset 3</option>
-            </select>
+
         </section>
+        <div id="tooltip" class="tooltip"></div>
     </main>
     <footer>
-        <p>&copy; 2024 <a href="http://www.johnalpha.dev">John Arufandika</a></p>
+        <p>&copy; 2024 <a href="http://johnalpha.dev">John Arufandika</p>
     </footer>
     <script src="script.js"></script>
 </body>
